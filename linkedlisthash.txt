@@ -1,0 +1,39 @@
+reults::results(int b) 
+{ 
+    this->BUCKET = b; 
+    table = new list<int>[BUCKET]; 
+}
+  
+void reults::insertItem(int key) 
+{ 
+    int index = hashFunction(key); 
+    table[index].push_back(key);  
+} 
+  
+void reults::deleteItem(int key) 
+{ 
+  // get the hash index of key 
+  int index = hashFunction(key); 
+  
+  // find the key in (inex)th list 
+  list <int> :: iterator i; 
+  for (i = table[index].begin(); 
+           i != table[index].end(); i++) { 
+    if (*i == key) 
+      break; 
+  } 
+  
+  // if key is found in hash table, remove it 
+  if (i != table[index].end()) 
+    table[index].erase(i); 
+} 
+results.cpp:59:24: error: no viable conversion from 'std::__cxx11::list<QString, std::allocator<QString> >' to 'const QString'
+qstring.h:225:5: note: candidate constructor not viable: no known conversion from 'std::__cxx11::list<QString, std::allocator<QString> >' to 'QChar' for 1st argument
+qstring.h:234:12: note: candidate constructor not viable: no known conversion from 'std::__cxx11::list<QString, std::allocator<QString> >' to 'QString &&' for 1st argument
+qstring.h:699:31: note: candidate constructor not viable: no known conversion from 'std::__cxx11::list<QString, std::allocator<QString> >' to 'const char *' for 1st argument
+qstring.h:702:31: note: candidate constructor not viable: no known conversion from 'std::__cxx11::list<QString, std::allocator<QString> >' to 'const QByteArray &' for 1st argument
+qstring.h:819:12: note: candidate constructor not viable: no known conversion from 'std::__cxx11::list<QString, std::allocator<QString> >' to 'const QString::Null &' for 1st argument
+qstring.h:829:29: note: candidate constructor not viable: no known conversion from 'std::__cxx11::list<QString, std::allocator<QString> >' to 'QStringDataPtr' for 1st argument
+qstring.h:931:17: note: candidate constructor not viable: no known conversion from 'std::__cxx11::list<QString, std::allocator<QString> >' to 'QLatin1String' for 1st argument
+qstring.h:957:17: note: candidate constructor not viable: no known conversion from 'std::__cxx11::list<QString, std::allocator<QString> >' to 'const QString &' for 1st argument
+qlistwidget.h:168:53: note: passing argument to parameter 'atext' here

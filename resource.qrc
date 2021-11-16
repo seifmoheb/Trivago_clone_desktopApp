@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/trivago.png</file>
+        <file>img/addimage.png</file>
+        <file>img/samiramis.jpg</file>
+        <file>img/hotel2.jpg</file>
+        <file>img/hotel3.jpg</file>
+        <file>img/hotel4.jpg</file>
+        <file>img/hotel5.jpg</file>
+        <file>img/notAv.png</file>
+        <file>img/greenAv.png</file>
+        <file>img/hotel6.jpg</file>
+        <file>img/hotel7.jpg</file>
+        <file>img/hotel8.jpg</file>
+        <file>img/hotel9.jpg</file>
+        <file>img/hotel10.jpg</file>
+        <file>img/hotel11.jpg</file>
+        <file>img/hotel12.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>results.js</file>
+    </qresource>
+</RCC>
